@@ -28,3 +28,66 @@ Request URL: /
 Client IP: 192.168.10.1
 
 
+2022-05-02 08:59:05 error: [Cake\Http\Exception\NotFoundException] Please replace templates/Pages/home.php with your own version or re-enable debug mode. in /home/vagrant/code/05/templates/Pages/home.php on line 45
+Stack Trace:
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/View/View.php:1181
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/View/View.php:1138
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/View/View.php:769
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/Controller.php:764
+- /home/vagrant/code/05/src/Controller/PagesController.php:65
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /home/vagrant/code/05/webroot/index.php:40
+- /home/vagrant/code/05/index.php:16
+
+Request URL: /
+Client IP: 192.168.10.1
+
+
+2022-05-02 09:16:52 error: [Error] Class "MongoDB\Driver\Manager" not found in /home/vagrant/code/05/vendor/mongodb/mongodb/src/Client.php on line 124
+Stack Trace:
+- /home/vagrant/code/05/src/Mongo/CollectionRegistry.php:19
+- /home/vagrant/code/05/src/Model/Document/QuizzesCollection.php:94
+- /home/vagrant/code/05/src/Model/Document/QuizzesCollection.php:72
+- /home/vagrant/code/05/src/Controller/QuizzesController.php:58
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/Controller.php:539
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/BaseApplication.php:317
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /home/vagrant/code/05/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /home/vagrant/code/05/webroot/index.php:40
+- /home/vagrant/code/05/index.php:16
+
+Request URL: /
+Client IP: 192.168.10.1
+
+

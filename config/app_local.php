@@ -47,7 +47,7 @@ return [
             'username' => 'homestead',
             'password' => 'secret',
 
-            'database' => '05s',
+            'database' => '05',
             /*
              * If not using the default 'public' schema with the PostgreSQL driver
              * set it here.
@@ -90,5 +90,11 @@ return [
             'client' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+    ],
+    'MongoDB' => [
+        'default' => [
+            'url' => 'mongodb://127.0.0.1/',
+            'database' => '05',
+        ]
     ],
 ];

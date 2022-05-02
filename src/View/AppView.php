@@ -1,6 +1,6 @@
 <?php
-declare(strict_types=1);
 
+declare(strict_types=1);
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
@@ -13,6 +13,7 @@ declare(strict_types=1);
  * @since     3.0.0
  * @license   https://opensource.org/licenses/mit-license.php MIT License
  */
+
 namespace App\View;
 
 use Cake\View\View;
@@ -37,5 +38,23 @@ class AppView extends View
      */
     public function initialize(): void
     {
+        $this->loadHelper('Paginator', [
+            'templates' => [
+                'nextActive' => '<li class="next"><a rel="next" class="btn btn-outline-dark m-1" href="{{url}}">{{text}}</a></li>',
+                'nextDisabled' => '<li class="next disabled"><a class="btn btn-outline-secondary m-1" disabled href="" onclick="return false;">{{text}}</a></li>',
+                'prevActive' => '<li class="prev"><a rel="prev" class="btn btn-outline-dark m-1" href="{{url}}">{{text}}</a></li>',
+                'prevDisabled' => '<li class="prev disabled"><a class="btn btn-outline-secondary m-1" disabled href="" onclick="return false;">{{text}}</a></li>',
+            ]
+        ]);
+        $this->loadHelper('Form', [
+            'templates' => [
+                'inputContainer' => '<div class="input {{type}}{{required}} mb-3">{{content}}</div>',
+                // Container element used by control() when a field has an error.
+                'inputContainerError' => '<div class="input {{type}}{{required}} error mb-3">{{content}}{{error}}</div>',
+                'radioContainer' => '<div{{containerAttrs}} class="{{containerClass}}form-group {{type}}{{required}}" role="group" aria-labelledby="{{groupId}}"><ul class="list-group">{{content}}</ul></div>',
+                'radioLabel' => '<label{{attrs}}>{{text}}{{tooltip}}</label>',
+                'radioWrapper' => '<li class="list-group-item"><div class="form-check">{{hidden}}{{label}}</div></li>',
+            ],
+        ]);
     }
 }
